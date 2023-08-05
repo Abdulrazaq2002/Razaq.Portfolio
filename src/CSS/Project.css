@@ -1,0 +1,195 @@
+/* Existing styles up to 768px */
+.p-demo {
+  margin-left: 10%;
+  color: #007bff;
+  /* text-decoration: underline 1.5px solid black; */
+}
+.line {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(77, 75, 75);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Existing styles */
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+hr {
+  /* margin-left: -10%; */
+  width: 80%;
+  border: 1px solid #007bff;
+}
+.image-container {
+  margin-left: 10%;
+  /* border: 2px solid #007bff; */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 40%;
+  height: 200px;
+  scroll-behavior: smooth;
+  position: relative;
+  float: right;
+}
+.carimg {
+  border-radius: 30px;
+  margin-top: -15px;
+  width: 100%;
+  height: auto;
+  transition: transform 4s ease;
+}
+
+.image-container:hover img {
+  transform: translateY(calc(-100% + 200px));
+  cursor: grab;
+}
+
+.image-container:active img {
+  cursor: grabbing;
+}
+.box {
+  background-color: rgb(253, 253, 253);
+  border-radius: 30px;
+}
+
+.left-section {
+  margin-left: 10%;
+  margin-top: -20%;
+  text-align: left;
+  padding: 10px;
+  width: 40%;
+  float: left;
+}
+
+.left-section h3 {
+  margin-top: 0;
+}
+
+.left-section a {
+  text-align: center;
+  margin-left: 15%;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  padding: 10px;
+  width: 30%;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.left-section a:hover {
+  color: #007bff;
+  background-color: white;
+}
+
+.left-section h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.left-section h3 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Project container */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Each project section */
+.left-section {
+  flex: 0 1 40%;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 0 1 40%;
+  text-align: right;
+  padding: 20px;
+}
+
+/* Images within each project section */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for max-width 769px */
+@media screen and (max-width: 769px) {
+  .projects {
+    display: inline-block;
+  }
+  .image-container {
+    margin-right: 20%;
+  }
+  .image-container img {
+    margin-left: 0%;
+  }
+  .left-section {
+    margin-left: 30%;
+  }
+  .left-section a {
+    margin-left: -20%;
+    width: 100%;
+  }
+  .left-section h2,
+  h3 {
+    margin-left: -20%;
+    text-align: justify;
+  }
+  hr {
+    margin-bottom: 10%;
+  }
+}
+
+/* Media query for max-width 510px */
+@media screen and (max-width: 510px) {
+  .projects {
+    display: block;
+    margin: 5%;
+  }
+  .image-container,
+  .left-section {
+    margin-left: -8%;
+    width: 100%;
+    text-align: center;
+  }
+  .image-container {
+    float: none;
+    margin-right: 0;
+  }
+  .left-section {
+    margin-left: 0;
+  }
+  .left-section a {
+    margin-left: -8%;
+    width: 100%;
+  }
+  .left-section h2,
+  .left-section h3 {
+    margin-left: -12%;
+    text-align: center;
+  }
+  hr {
+    margin-bottom: 10%;
+  }
+}

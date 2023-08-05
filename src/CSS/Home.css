@@ -1,0 +1,187 @@
+/* Home.css */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* General styling for the home page container */
+.home-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the header section */
+header {
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Hover effect for the navigation links */
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Styling for the main content section */
+main {
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  /* background-color: black; */
+  /* border: 2px solid #007bff; */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  animation: borderAnimation 2s infinite alternate;
+  margin-right: 20px;
+}
+
+.text-section {
+  width: 50%;
+  /* flex: 1; */
+}
+
+.text-section h2 {
+  color: #69adf5;
+  margin-left: 10%;
+  font-size: 50px;
+}
+
+.p-tag {
+  color: rgb(77, 75, 75);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+/* Styling for the hero section */
+.hero-section {
+  margin: 10px 0;
+}
+
+.hero-section h2 {
+  margin-bottom: 10px;
+}
+
+.hero-section .hand {
+  width: 50px;
+  height: auto;
+}
+
+/* Styling for the "Languages Used To Create Pages" section */
+.lang-name {
+  margin-left: 10%;
+  color: rgb(77, 75, 75);
+  font-size: 20px;
+  /* text-decoration: underline 1.5px solid black; */
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.languages {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.language {
+  width: 80px;
+  height: auto;
+  margin: 0 10px; /* Adjust the margin as needed to create spacing between images */
+}
+
+/* Styling for the footer */
+footer {
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive CSS for mobile devices */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    /* display: ${props => (props.isMenuOpen ? "flex" : "none")}; */
+  }
+
+  .nav-links ul {
+    margin-top: 20px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .profile {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .lang-name {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  .languages img {
+    width: 50px;
+    height: auto;
+  }
+}
